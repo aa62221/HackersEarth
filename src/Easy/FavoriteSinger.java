@@ -14,11 +14,13 @@ public class FavoriteSinger {
 	        for (int i = 0; i < n; i++) {
 	            long singer = sc.nextLong();
 	            Integer count = singerCount.get(singer);
-	            if (count == null) {
-	                singerCount.put(singer, 1);
-	            } else {
-	                singerCount.put(singer, count + 1);
-	            }
+//	            if (count == null) {
+//	                singerCount.put(singer, 1);
+//	            } else {
+//	                singerCount.put(singer, count + 1);
+//	            }
+	            singerCount.put(singer, count == null ? 1 : count + 1);
+	            
 	        }
 	        int maxCount = Collections.max(singerCount.values());
 	        int favouriteSingers = 0;
