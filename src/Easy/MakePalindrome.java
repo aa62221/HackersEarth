@@ -14,6 +14,7 @@ public class MakePalindrome {
             for (char c : s.toCharArray()) {
             	 freqMap.put(c, freqMap.getOrDefault(c, 0) + 1);                          	
             }
+            System.out.println(freqMap);
             int oddCount = 0;            
 			for (int count : freqMap.values()) {
 				if (count % 2 != 0) {
@@ -26,3 +27,5 @@ public class MakePalindrome {
         sc.close();
     }
 }
+
+//Description: Program to find the minimum number of characters that need to be removed/added from a string to make it a palindrome.

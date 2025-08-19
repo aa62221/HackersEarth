@@ -22,6 +22,8 @@ public class FavoriteSinger {
 	            singerCount.put(singer, count == null ? 1 : count + 1);
 	            
 	        }
+	        
+	        System.out.println(singerCount);
 	        int maxCount = Collections.max(singerCount.values());
 	        int favouriteSingers = 0;
 	        for (int count : singerCount.values()) {
@@ -33,3 +35,6 @@ public class FavoriteSinger {
 	}
 
 }
+
+
+//Description: Find the number of singers with the maximum song from the playlist. 
