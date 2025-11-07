@@ -8,7 +8,6 @@ public class MakePalindrome {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
         while (T-- > 0) {
-            int N = sc.nextInt();
             String s = sc.next();
             HashMap<Character, Integer> freqMap = new HashMap<>();
             for (char c : s.toCharArray()) {

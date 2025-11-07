@@ -14,6 +14,9 @@ public class StringManipulation {
         // Find max length
         int maxLength = 0;
         for (String word : words) {
+//        	if(word.length() > maxLength) {
+//        		maxLength = word.length();
+//        	}
             maxLength = Math.max(maxLength, word.length());
         }
 

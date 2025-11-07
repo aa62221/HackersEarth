@@ -30,6 +30,7 @@ public class SortHashMapBasedOnValues implements Comparator<Map.Entry<String, In
 	@Override
 	 public int compare(Map.Entry<String, Integer> e1, Map.Entry<String, Integer> e2) {
         // Compare by value (descending)
+//		int valueCompare= e2.getValue()-e1.getValue();
         int valueCompare = e2.getValue().compareTo(e1.getValue());
         if (valueCompare != 0) {
             return valueCompare;
